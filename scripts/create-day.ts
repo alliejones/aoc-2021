@@ -14,7 +14,7 @@ try {
     await Deno.writeTextFile(
       `./${dayDir}/${dayDir}.ts`,
       `import readInput from "../util/read-input.ts";
-const input = await readInput((line) => line, "${dayDir}/input");`,
+const input = await readInput((line) => line, "${dayDir}/example");`,
     );
     await Deno.writeTextFile(`./${dayDir}/${dayDir}-2.ts`, "");
   }
